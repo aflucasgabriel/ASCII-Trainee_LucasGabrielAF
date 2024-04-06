@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos com DOM</title>
+
+    <style>
+        body{
+            background: rgba(3, 39, 170, 0.575);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo <strong>DOM</strong> em JavaScript</p>
+    <div id = "msg"> Clique em mim </div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0];
+        var p2 = document.getElementsByTagName('p')[1];
+        var d = document.getElementById("msg");
+        document.write("Esta escrito assim: " + p1.innerText);
+        p2.style.color = 'white';
+        d.style.background = 'brown';
+
+        document.write(p1.innerHTML);
+        document.write(d.innerHTML);
+
+        var s = window.document.querySelector('div#msg');
+        s.style.color = 'yellow'
+
+
+    </script>
+    
+</body>
+</html>
